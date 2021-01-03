@@ -19,8 +19,6 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     AddStudentComponent,
     UpdateStudentComponent,
     StudentDetailsComponent
-  
-    
   ],
   imports: [
     BrowserModule,

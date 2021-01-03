@@ -22,7 +22,6 @@ export class AddStudentComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.email])
   });
 
-
   ngOnInit(): void {
 
   }
@@ -45,10 +44,7 @@ export class AddStudentComponent implements OnInit {
     this.router.navigate(['/getStudents']);
   }
   onSubmit() {
-    //this.submitted = true;
-
-   
-
+  
     // stop here if form is invalid
     if (this.registerForm.invalid) {
       return;
@@ -58,7 +54,6 @@ export class AddStudentComponent implements OnInit {
     this.addStudent();
   }
   onReset() {
-    //this.submitted = false;
     this.registerForm.reset();
   }
   // convenience getter for easy access to form fields

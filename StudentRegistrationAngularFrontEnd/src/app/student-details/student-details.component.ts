@@ -3,7 +3,6 @@ import { Student } from '../_model/student';
 import { ActivatedRoute, Router } from '@angular/router';
 import { StudentService } from '../_services/student.service';
 
-
 @Component({
   selector: 'app-student-details',
   templateUrl: './student-details.component.html',
@@ -25,6 +24,4 @@ export class StudentDetailsComponent implements OnInit {
       this.student = data;
     }, error =>console.log(error));
   }
-
-
 }

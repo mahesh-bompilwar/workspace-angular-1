@@ -16,7 +16,6 @@ export class StudentService {
     return this.httpclient.get<Student[]>(`${this.baseURL+'get-students'}`);     
   }
 
-  
   addStudent(student: Student): Observable<any>{
     console.log("Here addStudent Observable");
     return this.httpclient.post(`${this.baseURL+'add-student'}`, student);     
@@ -26,7 +25,6 @@ export class StudentService {
 
     return this.httpclient.get<Student>(`${this.baseURL+'get-student'}/${id}`);
     
-
   }
 
   updateStudent(student: Student):Observable<any>{
